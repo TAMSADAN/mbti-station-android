@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 2022.06.21 신승민 작성, 아이콘 수정 예정 -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="@string/home_page_name"/>
+
+    <item
+        android:id="@+id/board_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="@string/board_page_name"/>
+
+    <item
+        android:id="@+id/scrap_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="@string/scrap_page_name"/>
+
+    <item
+        android:id="@+id/my_info_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="@string/my_info_page_name"/>
+</menu>

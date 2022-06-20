@@ -1,0 +1,11 @@
+<!-- 2022.06.21 신승민 작성 -->
+<resources>
+    <string name="app_name">MBTI</string>
+
+    <!-- Bottom Navigation 각 페이지 이름 -->
+    <string name="home_page_name">홈</string>
+    <string name="board_page_name">게시판</string>
+    <string name="scrap_page_name">관심</string>
+    <string name="my_info_page_name">내 정보</string>
+
+</resources>
