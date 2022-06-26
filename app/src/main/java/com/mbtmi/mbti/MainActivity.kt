@@ -1,61 +1,25 @@
 package com.mbtmi.mbti
 
-import android.content.Intent
 import android.os.Bundle
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
 import com.mbtmi.mbti.base.BaseActivity
 import com.mbtmi.mbti.databinding.ActivityMainBinding
-import com.mbtmi.mbti.view.HomeActivity
 
+// 2022.06.26 신승민 네비게이션 연결
 class MainActivity : BaseActivity<ActivityMainBinding>({
-    ActivityMainBinding.inflate(it)}){
+    ActivityMainBinding.inflate(it)}) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val intent = Intent(this, HomeActivity::class.java)
+        // 네비게이션들을 담는 호스트
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment
 
-        binding.bottomNavigation.setOnItemSelectedListener{ item->
-            when(item.itemId){
-                R.id.home_page -> {
-                    startActivity(intent)
-                }
-                R.id.board_page -> {
+        // 네비게이션 컨트롤러
+        val navController = navHostFragment.navController
 
-                }
-                R.id.scrap_page -> {
-
-                }
-                R.id.my_info_page -> {
-
-                }
-            }
-            true
-        }
-    }
-
-
-    private fun initBottomNavigationBar(){
-        val intent = Intent(this, HomeActivity::class.java)
-
-        binding.bottomNavigation.run{
-            setOnItemSelectedListener{ item ->
-                when(item.itemId){
-                    R.id.home_page -> {
-                        startActivity(intent)
-                    }
-                    R.id.board_page -> {
-
-                    }
-                    R.id.scrap_page -> {
-
-                    }
-                    R.id.my_info_page -> {
-
-                    }
-                }
-                true
-            }
-            selectedItemId = R.id.home_page
-        }
+        // 바텀 네비게이션과 네비게이션 묶어줌
+        NavigationUI.setupWithNavController(binding.bottomNavigation, navController)
     }
 }

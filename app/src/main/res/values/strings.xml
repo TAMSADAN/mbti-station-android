@@ -1,4 +1,5 @@
 <!-- 2022.06.21 신승민 작성 -->
+<!-- 2022.06.27 신승민 수정 -->
 <resources>
     <string name="app_name">MBTI</string>
 
@@ -7,5 +8,11 @@
     <string name="board_page_name">게시판</string>
     <string name="scrap_page_name">관심</string>
     <string name="my_info_page_name">내 정보</string>
+    
+    <!-- HomeFragment에 들어갈 문자열 -->
+    <string name="home_title">%s TMI</string>
+    <string name="hot_post"><u>🔥이 게시물이 %s에게 가장 인기에요!</u></string>
+    <string name="post_category">%s</string>
+    <string name="post_writer">%s 익명 | %s전</string>
 
 </resources>

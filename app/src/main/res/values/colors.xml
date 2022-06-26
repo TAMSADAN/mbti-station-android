@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="mbti_gray_a">#4F4F4F</color>
+    <color name="mbti_gray_b">#6D6D6D</color>
+    <color name="mbti_gray_c">#A5A5A5</color>
+    <color name="mbti_gray_d">#D7DFE2</color>
+
+    <color name="mbti_mint_a">#00C7BE</color>
+
+    <color name="mbti_blue_a">#ABD4E9</color>
 </resources>

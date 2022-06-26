@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mbtmi.mbti.view.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="com.mbtmi.mbti.view.BoardFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_board" />
+    <fragment
+        android:id="@+id/scrapFragment"
+        android:name="com.mbtmi.mbti.view.ScrapFragment"
+        android:label="fragment_scrap"
+        tools:layout="@layout/fragment_scrap" />
+    <fragment
+        android:id="@+id/myInfoFragment"
+        android:name="com.mbtmi.mbti.view.MyInfoFragment"
+        android:label="fragment_my_info"
+        tools:layout="@layout/fragment_my_info" />
+</navigation>

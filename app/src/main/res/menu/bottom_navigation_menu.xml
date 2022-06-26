@@ -5,25 +5,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/home_page"
+        android:id="@+id/homeFragment"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="@string/home_page_name"/>
 
     <item
-        android:id="@+id/board_page"
+        android:id="@+id/boardFragment"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="@string/board_page_name"/>
 
     <item
-        android:id="@+id/scrap_page"
+        android:id="@+id/scrapFragment"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="@string/scrap_page_name"/>
 
     <item
-        android:id="@+id/my_info_page"
+        android:id="@+id/myInfoFragment"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="@string/my_info_page_name"/>
