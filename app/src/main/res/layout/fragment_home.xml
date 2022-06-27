@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.mbtmi.mbti.view.HomeFragment"
     android:id="@+id/homeFragment">
-
     <data>
 
     </data>
@@ -129,7 +128,6 @@
                 app:layout_constraintRight_toRightOf="parent"
                 android:textSize="14sp"
                 android:textColor="@color/mbti_blue_a"
-                android:layout_marginBottom="1dp"
                 android:layout_marginRight="1dp"/>
 
             <View
@@ -142,6 +140,237 @@
 
 
 
+
+            <!-- 밸런스 게임 -->
+
+            <TextView
+                android:id="@+id/balance_description_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_post"
+                app:layout_constraintTop_toBottomOf="@id/hot_post_partition_view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="20dp"
+                android:textSize="13sp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/balance_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="밸런스 게임 제목"
+                app:layout_constraintTop_toBottomOf="@id/balance_description_text_view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="14dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/balance_category_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/post_category"
+                app:layout_constraintTop_toTopOf="@id/balance_title_text_view"
+                app:layout_constraintBottom_toBottomOf="@id/balance_title_text_view"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textSize="13sp"
+                android:textColor="@color/mbti_gray_a" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/balance_content_button_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_balance_button_background"
+                android:text="밸런스 게임 내용"
+                app:layout_constraintTop_toBottomOf="@id/balance_title_text_view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="2dp"
+                android:textSize="14sp"
+                android:textColor="@color/mbti_gray_e"
+                android:stateListAnimator="@null"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/balance_content_button_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_balance_button_background"
+                android:text="밸런스 게임 내용"
+                app:layout_constraintTop_toBottomOf="@id/balance_content_button_one"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2dp"
+                android:textSize="14sp"
+                android:textColor="@color/mbti_gray_e"
+                android:stateListAnimator="@null"/>
+
+            <TextView
+                android:id="@+id/balance_writer_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/post_writer"
+                app:layout_constraintTop_toBottomOf="@id/balance_content_button_two"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/mbti_gray_c"/>
+
+            <ImageView
+                android:id="@+id/balance_smile_image_view"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:src="@drawable/ic_smile_like"
+                app:layout_constraintTop_toTopOf="@id/balance_writer_text_view"
+                app:layout_constraintBottom_toBottomOf="@id/balance_writer_text_view"
+                app:layout_constraintRight_toLeftOf="@id/balance_like_num_text_view"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:id="@+id/balance_like_num_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                app:layout_constraintTop_toTopOf="@id/balance_smile_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/balance_smile_image_view"
+                android:textSize="14sp"
+                android:textColor="@color/mbti_mint_a"
+                app:layout_constraintRight_toLeftOf="@id/balance_comment_image_view"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:id="@+id/balance_comment_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_comment"
+                app:layout_constraintTop_toTopOf="@id/balance_like_num_text_view"
+                app:layout_constraintBottom_toBottomOf="@id/balance_like_num_text_view"
+                app:layout_constraintRight_toLeftOf="@id/balance_comment_num_text_view"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:id="@+id/balance_comment_num_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                app:layout_constraintTop_toTopOf="@id/balance_comment_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/balance_comment_image_view"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textSize="14sp"
+                android:textColor="@color/mbti_blue_a"
+                android:layout_marginRight="1dp"/>
+
+            <View
+                android:id="@+id/balance_partition_view"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/mbti_gray_d"
+                app:layout_constraintTop_toBottomOf="@id/balance_writer_text_view"
+                android:layout_marginTop="22dp"/>
+
+
+            <!-- 같은 mbti가 작성한 글 -->
+
+
+            <TextView
+                android:id="@+id/free_description_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/free_post"
+                app:layout_constraintTop_toBottomOf="@id/balance_partition_view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="16dp"
+                android:textSize="13sp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/free_post_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인기게시물 제목"
+                app:layout_constraintTop_toBottomOf="@id/free_description_text_view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/free_post_category_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/post_category"
+                app:layout_constraintTop_toTopOf="@id/free_post_title_text_view"
+                app:layout_constraintBottom_toBottomOf="@id/free_post_title_text_view"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textSize="13sp"
+                android:textColor="@color/mbti_gray_a" />
+
+            <TextView
+                android:id="@+id/free_post_content_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인기게시물 내용"
+                app:layout_constraintTop_toBottomOf="@id/free_post_title_text_view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp"
+                android:textColor="@color/mbti_gray_b"/>
+
+            <TextView
+                android:id="@+id/free_post_writer_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/post_writer"
+                app:layout_constraintTop_toBottomOf="@id/free_post_content_text_view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/mbti_gray_c"/>
+
+            <ImageView
+                android:id="@+id/free_smile_image_view"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:src="@drawable/ic_smile_like"
+                app:layout_constraintTop_toTopOf="@id/free_post_writer_text_view"
+                app:layout_constraintBottom_toBottomOf="@id/free_post_writer_text_view"
+                app:layout_constraintRight_toLeftOf="@id/free_like_num_text_view"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:id="@+id/free_like_num_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                app:layout_constraintTop_toTopOf="@id/free_smile_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/free_smile_image_view"
+                android:textSize="14sp"
+                android:textColor="@color/mbti_mint_a"
+                app:layout_constraintRight_toLeftOf="@id/free_comment_image_view"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:id="@+id/free_comment_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_comment"
+                app:layout_constraintTop_toTopOf="@id/free_like_num_text_view"
+                app:layout_constraintBottom_toBottomOf="@id/free_like_num_text_view"
+                app:layout_constraintRight_toLeftOf="@id/free_comment_num_text_view"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:id="@+id/free_comment_num_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                app:layout_constraintTop_toTopOf="@id/free_comment_image_view"
+                app:layout_constraintBottom_toBottomOf="@id/free_comment_image_view"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textSize="14sp"
+                android:textColor="@color/mbti_blue_a"
+                android:layout_marginRight="1dp"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,5 +14,7 @@
     <string name="hot_post"><u>🔥이 게시물이 %s에게 가장 인기에요!</u></string>
     <string name="post_category">%s</string>
     <string name="post_writer">%s 익명 | %s전</string>
+    <string name="balance_post">  <u>%s의 대답을 기다려요.</u></string>
+    <string name="free_post"><u>✍️INFP가 작성한 글이에요.</u></string>
 
 </resources>

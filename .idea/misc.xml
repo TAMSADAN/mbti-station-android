@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/drawable/home_balance_button_background.xml" value="0.1" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/fragment_board.xml" value="0.17647058823529413" />
-        <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/fragment_home.xml" value="0.20884146341463414" />
+        <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/fragment_my_info.xml" value="0.1" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/fragment_scrap.xml" value="0.16018518518518518" />
+        <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/layout_post_preview.xml" value="0.2" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
