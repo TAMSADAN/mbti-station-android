@@ -14,7 +14,7 @@ import androidx.viewbinding.ViewBinding
 
 abstract class BaseFragment<T : ViewDataBinding>(@LayoutRes private val layoutResId : Int) : Fragment() {
     private var _binding : T? = null
-    private val binding get() = _binding ?: error("View를 참조하기 위해 binding이 초기화되지 않았습니다.")
+    val binding get() = _binding ?: error("View를 참조하기 위해 binding이 초기화되지 않았습니다.")
 
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -15,6 +15,16 @@
     <string name="post_category">%s</string>
     <string name="post_writer">%s 익명 | %s전</string>
     <string name="balance_post">  <u>%s의 대답을 기다려요.</u></string>
-    <string name="free_post"><u>✍️INFP가 작성한 글이에요.</u></string>
+    <string name="free_post"><u>✍️%s가 작성한 글이에요.</u></string>
+
+    <!-- BoardFragment에 들어갈 문자열 -->
+    <string name="all_chip">🗄 전체</string>
+    <string name="free_chip">✏️ 자유</string>
+    <string name="vote_chip">📦 투표</string>
+    <string name="balance_chip">🕹밸런스</string>
+    <string name="all_board">🗄 전체 게시판</string>
+    <string name="free_board">✏️ 자유 게시판</string>
+    <string name="vote_board">📦 투표 게시판</string>
+    <string name="balance_board">🕹밸런스 게시판</string>
 
 </resources>
