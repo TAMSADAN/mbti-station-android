@@ -19,6 +19,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="21dp"
+            android:fontFamily="@font/notosanskr_bold"
+            android:includeFontPadding="false"
             android:textSize="16sp"
             android:textColor="@color/black" />
 
@@ -31,6 +33,8 @@
             app:layout_constraintBottom_toBottomOf="@id/hot_post_title_text_view"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginRight="18dp"
+            android:fontFamily="@font/notosanskr_regular"
+            android:includeFontPadding="false"
             android:textSize="13sp"
             android:textColor="@color/mbti_gray_a" />
 
@@ -43,6 +47,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="4dp"
             android:layout_marginLeft="21dp"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"
             android:textSize="14sp"
             android:textColor="@color/mbti_gray_b" />
 
@@ -55,6 +61,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="21dp"
+            android:fontFamily="@font/notosanskr_regular"
+            android:includeFontPadding="false"
             android:textSize="12sp"
             android:textColor="@color/mbti_gray_c" />
 
@@ -78,6 +86,8 @@
             android:textSize="14sp"
             android:textColor="@color/mbti_mint_a"
             app:layout_constraintRight_toLeftOf="@id/comment_image_view"
+            android:fontFamily="@font/notosanskr_regular"
+            android:includeFontPadding="false"
             android:layout_marginRight="12dp" />
 
         <ImageView
@@ -99,6 +109,8 @@
             app:layout_constraintBottom_toBottomOf="@id/comment_image_view"
             app:layout_constraintRight_toRightOf="parent"
             android:textSize="14sp"
+            android:fontFamily="@font/notosanskr_regular"
+            android:includeFontPadding="false"
             android:textColor="@color/mbti_blue_a"
             android:layout_marginRight="19dp" />
 

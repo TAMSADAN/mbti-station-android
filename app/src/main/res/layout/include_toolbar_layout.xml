@@ -13,8 +13,11 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:background="@android:color/transparent"
         android:text="게시판"
+        android:textSize="15sp"
         android:textColor="@color/mbti_mint_a"
         android:layout_marginLeft="21dp"
+        android:fontFamily="@font/notosanskr_regular"
+        android:includeFontPadding="false"
         android:drawableLeft="@drawable/ic_back_button"
         android:drawablePadding="-24dp" />
 
@@ -25,6 +28,8 @@
         android:text="🗄 전체 게시판"
         android:textSize="17sp"
         android:textColor="@color/black"
+        android:fontFamily="@font/notosanskr_bold"
+        android:includeFontPadding="false"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

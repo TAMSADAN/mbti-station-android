@@ -27,6 +27,8 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="35dp"
+                android:fontFamily="@font/notosanskr_bold"
+                android:includeFontPadding="false"
                 android:textSize="32sp"
                 android:textColor="@color/black"/>
 
@@ -38,6 +40,8 @@
                 app:layout_constraintTop_toBottomOf="@id/home_title_text_view"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="16dp"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 android:textSize="13sp"
                 android:textColor="@color/black" />
 
@@ -50,6 +54,8 @@
                 app:layout_constraintTop_toBottomOf="@id/hot_description_text_view"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="15dp"
+                android:fontFamily="@font/notosanskr_bold"
+                android:includeFontPadding="false"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
 
@@ -61,6 +67,8 @@
                 app:layout_constraintTop_toTopOf="@id/hot_post_title_text_view"
                 app:layout_constraintBottom_toBottomOf="@id/hot_post_title_text_view"
                 app:layout_constraintRight_toRightOf="parent"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 android:textSize="13sp"
                 android:textColor="@color/mbti_gray_a" />
 
@@ -72,6 +80,8 @@
                 app:layout_constraintTop_toBottomOf="@id/hot_post_title_text_view"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="4dp"
+                android:fontFamily="@font/notosanskr_medium"
+                android:includeFontPadding="false"
                 android:textSize="14sp"
                 android:textColor="@color/mbti_gray_b"/>
 
@@ -83,6 +93,8 @@
                 app:layout_constraintTop_toBottomOf="@id/hot_post_content_text_view"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="16dp"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 android:textSize="12sp"
                 android:textColor="@color/mbti_gray_c"/>
 
@@ -105,6 +117,8 @@
                 app:layout_constraintBottom_toBottomOf="@id/smile_image_view"
                 android:textSize="14sp"
                 android:textColor="@color/mbti_mint_a"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 app:layout_constraintRight_toLeftOf="@id/comment_image_view"
                 android:layout_marginRight="12dp"/>
 
@@ -127,6 +141,8 @@
                 app:layout_constraintBottom_toBottomOf="@id/comment_image_view"
                 app:layout_constraintRight_toRightOf="parent"
                 android:textSize="14sp"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 android:textColor="@color/mbti_blue_a"
                 android:layout_marginRight="1dp"/>
 
@@ -149,6 +165,8 @@
                 app:layout_constraintTop_toBottomOf="@id/hot_post_partition_view"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="20dp"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 android:textSize="13sp"
                 android:textColor="@color/black" />
 
@@ -161,6 +179,8 @@
                 app:layout_constraintTop_toBottomOf="@id/balance_description_text_view"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="14dp"
+                android:fontFamily="@font/notosanskr_bold"
+                android:includeFontPadding="false"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
 
@@ -172,6 +192,8 @@
                 app:layout_constraintTop_toTopOf="@id/balance_title_text_view"
                 app:layout_constraintBottom_toBottomOf="@id/balance_title_text_view"
                 app:layout_constraintRight_toRightOf="parent"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 android:textSize="13sp"
                 android:textColor="@color/mbti_gray_a" />
 
@@ -185,6 +207,8 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="9dp"
                 android:layout_marginRight="2dp"
+                android:fontFamily="@font/notosanskr_medium"
+                android:includeFontPadding="false"
                 android:textSize="14sp"
                 android:textColor="@color/mbti_gray_e"
                 android:stateListAnimator="@null"/>
@@ -199,6 +223,8 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="2dp"
+                android:fontFamily="@font/notosanskr_medium"
+                android:includeFontPadding="false"
                 android:textSize="14sp"
                 android:textColor="@color/mbti_gray_e"
                 android:stateListAnimator="@null"/>
@@ -211,6 +237,8 @@
                 app:layout_constraintTop_toBottomOf="@id/balance_content_button_two"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="16dp"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 android:textSize="12sp"
                 android:textColor="@color/mbti_gray_c"/>
 
@@ -233,6 +261,8 @@
                 app:layout_constraintBottom_toBottomOf="@id/balance_smile_image_view"
                 android:textSize="14sp"
                 android:textColor="@color/mbti_mint_a"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 app:layout_constraintRight_toLeftOf="@id/balance_comment_image_view"
                 android:layout_marginRight="12dp"/>
 
@@ -255,6 +285,8 @@
                 app:layout_constraintBottom_toBottomOf="@id/balance_comment_image_view"
                 app:layout_constraintRight_toRightOf="parent"
                 android:textSize="14sp"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 android:textColor="@color/mbti_blue_a"
                 android:layout_marginRight="1dp"/>
 
@@ -278,6 +310,8 @@
                 app:layout_constraintTop_toBottomOf="@id/balance_partition_view"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="16dp"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 android:textSize="13sp"
                 android:textColor="@color/black" />
 
@@ -290,6 +324,8 @@
                 app:layout_constraintTop_toBottomOf="@id/free_description_text_view"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="15dp"
+                android:fontFamily="@font/notosanskr_bold"
+                android:includeFontPadding="false"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
 
@@ -298,6 +334,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/post_category"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 app:layout_constraintTop_toTopOf="@id/free_post_title_text_view"
                 app:layout_constraintBottom_toBottomOf="@id/free_post_title_text_view"
                 app:layout_constraintRight_toRightOf="parent"
@@ -312,6 +350,8 @@
                 app:layout_constraintTop_toBottomOf="@id/free_post_title_text_view"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="4dp"
+                android:fontFamily="@font/notosanskr_medium"
+                android:includeFontPadding="false"
                 android:textSize="14sp"
                 android:textColor="@color/mbti_gray_b"/>
 
@@ -323,6 +363,8 @@
                 app:layout_constraintTop_toBottomOf="@id/free_post_content_text_view"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="16dp"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 android:textSize="12sp"
                 android:textColor="@color/mbti_gray_c"/>
 
@@ -345,6 +387,8 @@
                 app:layout_constraintBottom_toBottomOf="@id/free_smile_image_view"
                 android:textSize="14sp"
                 android:textColor="@color/mbti_mint_a"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 app:layout_constraintRight_toLeftOf="@id/free_comment_image_view"
                 android:layout_marginRight="12dp"/>
 
@@ -363,6 +407,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="15"
+                android:fontFamily="@font/notosanskr_regular"
+                android:includeFontPadding="false"
                 app:layout_constraintTop_toTopOf="@id/free_comment_image_view"
                 app:layout_constraintBottom_toBottomOf="@id/free_comment_image_view"
                 app:layout_constraintRight_toRightOf="parent"

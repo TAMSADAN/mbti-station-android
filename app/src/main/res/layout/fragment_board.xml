@@ -12,19 +12,22 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/mbti_gray_h">
+        android:background="@color/white">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/app_bar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:elevation="0dp"
             android:background="@color/white"
             android:fitsSystemWindows="true">
 
             <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_tool_bar_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fitsSystemWindows="true"
+                android:background="@color/white"
                 app:contentScrim="@color/mbti_gray_i"
                 app:expandedTitleTextAppearance="@android:color/transparent"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
@@ -34,13 +37,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     app:layout_collapseMode="pin"
+                    android:background="@color/white"
                     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/menu_constraint_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/white"
                     app:layout_collapseMode="parallax"
                     app:layout_collapseParallaxMultiplier="0">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        app:layout_constraintTop_toBottomOf="@id/chip_group"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintBottom_toTopOf="@id/gray_view"
+                        android:background="@color/mbti_gray_d"/>
 
                     <TextView
                         android:id="@+id/board_title_text_view"
@@ -51,6 +65,8 @@
                         android:text="게시판"
                         android:textSize="32sp"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/notosanskr_bold"
+                        android:includeFontPadding="false"
                         android:layout_marginTop="35dp"
                         android:layout_marginLeft="26dp" />
 
@@ -62,6 +78,8 @@
                         app:layout_constraintRight_toRightOf="parent"
                         android:layout_marginTop="9dp"
                         android:layout_marginRight="22dp"
+                        android:fontFamily="@font/notosanskr_bold"
+                        android:includeFontPadding="false"
                         android:textSize="15sp"
                         android:textColor="@color/mbti_mint_a"/>
 
@@ -82,6 +100,8 @@
                             android:text="@string/all_chip"
                             style="@style/Widget.MaterialComponents.Chip.Choice"
                             android:textSize="14sp"
+                            android:fontFamily="@font/notosanskr_regular"
+                            android:includeFontPadding="false"
                             android:textColor="@color/mbti_gray_g"/>
 
                         <com.google.android.material.chip.Chip
@@ -90,6 +110,8 @@
                             android:text="@string/free_chip"
                             style="@style/Widget.MaterialComponents.Chip.Choice"
                             android:textSize="14sp"
+                            android:fontFamily="@font/notosanskr_regular"
+                            android:includeFontPadding="false"
                             android:textColor="@color/mbti_gray_g"/>
 
                         <com.google.android.material.chip.Chip
@@ -98,6 +120,8 @@
                             android:text="@string/vote_chip"
                             style="@style/Widget.MaterialComponents.Chip.Choice"
                             android:textSize="14sp"
+                            android:fontFamily="@font/notosanskr_regular"
+                            android:includeFontPadding="false"
                             android:textColor="@color/mbti_gray_g"/>
 
                         <com.google.android.material.chip.Chip
@@ -106,18 +130,18 @@
                             android:text="@string/balance_chip"
                             style="@style/Widget.MaterialComponents.Chip.Choice"
                             android:textSize="14sp"
+                            android:fontFamily="@font/notosanskr_regular"
+                            android:includeFontPadding="false"
                             android:textColor="@color/mbti_gray_g"/>
 
                     </com.google.android.material.chip.ChipGroup>
 
                     <View
+                        android:id="@+id/gray_view"
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
+                        android:layout_height="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/chip_group"
-                        android:layout_marginTop="20dp"
-                        android:background="@color/mbti_gray_d"/>
-
+                        android:background="@color/mbti_gray_h"/>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -126,9 +150,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:layout_gravity="bottom"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
-                    android:background="@color/mbti_gray_i"
+
+                    android:background="@color/white"
                     app:layout_collapseMode="pin"
                     app:layout_collapseParallaxMultiplier="1">
 
@@ -138,10 +161,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/notosanskr_regular"
+                    android:includeFontPadding="false"
                     android:textColor="@color/mbti_mint_a"
                     android:text="최신 순"/>
 
@@ -155,6 +181,8 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:includeFontPadding="false"
                     android:textColor="@color/black"
                     android:text="@string/all_board"/>
 
@@ -167,8 +195,18 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:includeFontPadding="false"
                     android:textColor="@color/mbti_mint_a"
+                    android:layout_marginRight="20dp"
                     android:text="글쓰기"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:background="@color/mbti_gray_d"/>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -179,7 +217,6 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
             android:clipToPadding="false"
             android:fillViewport="true"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">

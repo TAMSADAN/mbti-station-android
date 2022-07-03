@@ -5,18 +5,20 @@
       <map>
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/drawable/board_appbar_background.xml" value="0.1" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/drawable/home_balance_button_background.xml" value="0.1" />
+        <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/drawable/ic_back_button.xml" value="0.135" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/drawable/ic_comment.xml" value="0.1" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/drawable/ic_rounded.xml" value="0.1" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/drawable/post_input_comment_background.xml" value="0.103" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/fragment_board.xml" value="0.22" />
-        <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/fragment_board.xml" value="0.2794759825327511" />
+        <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/fragment_home.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/fragment_my_info.xml" value="0.1" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/fragment_post.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/fragment_scrap.xml" value="0.16018518518518518" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/include_toolbar_layout.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/item_post_free.xml" value="0.2" />
+        <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/item_post_free.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/item_post_vote.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/layout/layout_post_preview.xml" value="0.2" />
         <entry key="..\:/Users/Seungmin/GitProjects/MBTI_Android/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.20416666666666666" />
       </map>
