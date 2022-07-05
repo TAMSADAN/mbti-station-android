@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.mbtmi.mbti.view.BoardFragment"
+    tools:context="com.mbtmi.mbti.view.fragment.BoardFragment"
     android:id="@+id/boardFragment">
 
     <data>
@@ -234,7 +234,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     android:orientation="vertical"
-                    tools:listitem="@layout/item_post_free"/>
+                    tools:listitem="@layout/item_preview_post_free"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>

@@ -8,117 +8,14 @@
         android:id="@+id/toolbar_layout"
         layout="@layout/include_toolbar_layout"/>
 
-    <androidx.core.widget.NestedScrollView
+    <!-- viewholder를 여러개 만들어서 게시글과 댓글, 대댓글을 구분할 예정 -->
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar_layout"
-        app:layout_constraintBottom_toTopOf="@id/comment_constraint_layout">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/hot_post_title_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="인기게시물 제목"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="21dp"
-                android:textSize="16sp"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/post_category_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/free_chip"
-                app:layout_constraintTop_toTopOf="@id/hot_post_title_text_view"
-                app:layout_constraintBottom_toBottomOf="@id/hot_post_title_text_view"
-                app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginRight="18dp"
-                android:textSize="13sp"
-                android:textColor="@color/mbti_gray_a" />
-
-            <TextView
-                android:id="@+id/hot_post_content_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="인기게시물 내용"
-                app:layout_constraintTop_toBottomOf="@id/hot_post_title_text_view"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="4dp"
-                android:layout_marginLeft="21dp"
-                android:textSize="14sp"
-                android:textColor="@color/mbti_gray_b" />
-
-            <TextView
-                android:id="@+id/hot_post_writer_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/post_writer"
-                app:layout_constraintTop_toBottomOf="@id/hot_post_content_text_view"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="21dp"
-                android:textSize="12sp"
-                android:textColor="@color/mbti_gray_c" />
-
-            <ImageView
-                android:id="@+id/smile_image_view"
-                android:layout_width="13dp"
-                android:layout_height="13dp"
-                android:src="@drawable/ic_smile_like"
-                app:layout_constraintTop_toTopOf="@id/hot_post_writer_text_view"
-                app:layout_constraintBottom_toBottomOf="@id/hot_post_writer_text_view"
-                app:layout_constraintRight_toLeftOf="@id/like_num_text_view"
-                android:layout_marginRight="3dp" />
-
-            <TextView
-                android:id="@+id/like_num_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="10"
-                app:layout_constraintTop_toTopOf="@id/smile_image_view"
-                app:layout_constraintBottom_toBottomOf="@id/smile_image_view"
-                android:textSize="14sp"
-                android:textColor="@color/mbti_mint_a"
-                app:layout_constraintRight_toLeftOf="@id/comment_image_view"
-                android:layout_marginRight="12dp" />
-
-            <ImageView
-                android:id="@+id/comment_image_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_comment"
-                app:layout_constraintTop_toTopOf="@id/like_num_text_view"
-                app:layout_constraintBottom_toBottomOf="@id/like_num_text_view"
-                app:layout_constraintRight_toLeftOf="@id/comment_num_text_view"
-                android:layout_marginRight="3dp" />
-
-            <TextView
-                android:id="@+id/comment_num_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="15"
-                app:layout_constraintTop_toTopOf="@id/comment_image_view"
-                app:layout_constraintBottom_toBottomOf="@id/comment_image_view"
-                app:layout_constraintRight_toRightOf="parent"
-                android:textSize="14sp"
-                android:textColor="@color/mbti_blue_a"
-                android:layout_marginRight="19dp" />
-
-            <View
-                android:id="@+id/hot_post_partition_view"
-                android:layout_width="match_parent"
-                android:layout_height="0.6dp"
-                android:background="@color/mbti_gray_d"
-                app:layout_constraintTop_toBottomOf="@id/hot_post_writer_text_view"
-                android:layout_marginTop="22dp" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.core.widget.NestedScrollView>
+        app:layout_constraintBottom_toTopOf="@id/comment_constraint_layout"/>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout

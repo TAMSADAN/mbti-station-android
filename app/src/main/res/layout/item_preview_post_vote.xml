@@ -39,32 +39,87 @@
             android:textColor="@color/mbti_gray_a" />
 
         <TextView
-            android:id="@+id/hot_post_content_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="인기게시물 내용"
-            app:layout_constraintTop_toBottomOf="@id/hot_post_title_text_view"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginTop="4dp"
-            android:layout_marginLeft="21dp"
-            android:fontFamily="@font/notosanskr_medium"
-            android:includeFontPadding="false"
-            android:textSize="14sp"
-            android:textColor="@color/mbti_gray_b" />
-
-        <TextView
+            android:id="@+id/vote_one_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="1. 봄"
+            android:textColor="@color/mbti_gray_e"
+            android:textSize="14sp"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"
+            android:paddingVertical="6dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="20dp"
             android:background="@drawable/home_balance_button_background"
-            />
+            app:layout_constraintTop_toBottomOf="@id/hot_post_title_text_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/vote_two_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. 여름"
+            android:textColor="@color/mbti_gray_e"
+            android:textSize="14sp"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"
+            android:paddingVertical="6dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/home_balance_button_background"
+            app:layout_constraintTop_toBottomOf="@id/vote_one_text_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/vote_three_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. 가을"
+            android:textColor="@color/mbti_gray_e"
+            android:textSize="14sp"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"
+            android:paddingVertical="6dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/home_balance_button_background"
+            app:layout_constraintTop_toBottomOf="@id/vote_two_text_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/vote_four_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. 겨울"
+            android:textColor="@color/mbti_gray_e"
+            android:textSize="14sp"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"
+            android:paddingVertical="6dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/home_balance_button_background"
+            app:layout_constraintTop_toBottomOf="@id/vote_three_text_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
             android:id="@+id/hot_post_writer_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/post_writer"
-            app:layout_constraintTop_toBottomOf="@id/hot_post_content_text_view"
+            app:layout_constraintTop_toBottomOf="@id/vote_four_text_view"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="21dp"

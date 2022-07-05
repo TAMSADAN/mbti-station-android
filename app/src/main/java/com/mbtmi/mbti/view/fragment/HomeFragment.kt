@@ -1,4 +1,4 @@
-package com.mbtmi.mbti.view
+package com.mbtmi.mbti.view.fragment
 
 import android.os.Bundle
 import android.view.View
