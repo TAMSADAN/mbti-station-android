@@ -27,4 +27,8 @@
     <string name="vote_board">📦 투표 게시판</string>
     <string name="balance_board">🕹밸런스 게시판</string>
 
+    <!-- Post에서 댓글에 들어갈 문자열 -->
+    <string name="comment_writer">%s 익명</string>
+    <string name="comment_time">%s 전</string>
+
 </resources>

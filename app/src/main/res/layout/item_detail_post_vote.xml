@@ -32,4 +32,124 @@
         android:textSize="13sp"
         android:textColor="@color/mbti_gray_a" />
 
+    <include
+        layout="@layout/include_vote_option_layout"
+        android:id="@+id/vote_option_one"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hot_post_title_text_view"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="20dp"/>
+
+    <include
+        layout="@layout/include_vote_option_layout"
+        android:id="@+id/vote_option_two"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vote_option_one"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="20dp"/>
+
+    <include
+        layout="@layout/include_vote_option_layout"
+        android:id="@+id/vote_option_three"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vote_option_two"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="20dp"/>
+
+    <include
+        layout="@layout/include_vote_option_layout"
+        android:id="@+id/vote_option_four"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vote_option_three"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/hot_post_writer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/post_writer"
+        app:layout_constraintTop_toBottomOf="@id/vote_option_four"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="21dp"
+        android:fontFamily="@font/notosanskr_regular"
+        android:includeFontPadding="false"
+        android:textSize="12sp"
+        android:textColor="@color/mbti_gray_c" />
+
+    <ImageView
+        android:id="@+id/smile_image_view"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:src="@drawable/ic_smile_like"
+        app:layout_constraintTop_toTopOf="@id/hot_post_writer_text_view"
+        app:layout_constraintBottom_toBottomOf="@id/hot_post_writer_text_view"
+        app:layout_constraintRight_toLeftOf="@id/like_num_text_view"
+        android:layout_marginRight="3dp" />
+
+    <TextView
+        android:id="@+id/like_num_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        app:layout_constraintTop_toTopOf="@id/smile_image_view"
+        app:layout_constraintBottom_toBottomOf="@id/smile_image_view"
+        android:textSize="14sp"
+        android:textColor="@color/mbti_mint_a"
+        android:fontFamily="@font/notosanskr_regular"
+        android:includeFontPadding="false"
+        app:layout_constraintRight_toLeftOf="@id/comment_image_view"
+        android:layout_marginRight="12dp" />
+
+    <ImageView
+        android:id="@+id/comment_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_comment"
+        app:layout_constraintTop_toTopOf="@id/like_num_text_view"
+        app:layout_constraintBottom_toBottomOf="@id/like_num_text_view"
+        app:layout_constraintRight_toLeftOf="@id/comment_num_text_view"
+        android:layout_marginRight="3dp" />
+
+    <TextView
+        android:id="@+id/comment_num_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        app:layout_constraintTop_toTopOf="@id/comment_image_view"
+        app:layout_constraintBottom_toBottomOf="@id/comment_image_view"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/notosanskr_regular"
+        android:includeFontPadding="false"
+        android:textSize="14sp"
+        android:textColor="@color/mbti_blue_a"
+        android:layout_marginRight="19dp" />
+
+    <View
+        android:id="@+id/hot_post_partition_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/mbti_gray_d"
+        app:layout_constraintTop_toBottomOf="@id/hot_post_writer_text_view"
+        android:layout_marginTop="22dp" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

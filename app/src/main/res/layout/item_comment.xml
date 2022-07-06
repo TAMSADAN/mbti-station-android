@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="22dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/comment_writer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/comment_writer"
+        android:fontFamily="@font/notosanskr_bold"
+        android:includeFontPadding="false"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="14dp"/>
+
+    <ImageView
+        android:id="@+id/post_like_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_like"
+        android:layout_marginRight="12dp"
+        app:layout_constraintRight_toLeftOf="@id/comment_count_image_view"
+        app:layout_constraintTop_toTopOf="@id/comment_writer_text_view"
+        app:layout_constraintBottom_toBottomOf="@id/comment_writer_text_view"/>
+
+    <ImageView
+        android:id="@+id/comment_count_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_comment_count"
+        android:layout_marginRight="19dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/post_like_image_view"
+        app:layout_constraintBottom_toBottomOf="@id/post_like_image_view"/>
+
+    <TextView
+        android:id="@+id/comment_content_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr_medium"
+        android:includeFontPadding="false"
+        android:textSize="14sp"
+        android:textColor="@color/mbti_gray_b"
+        app:layout_constraintTop_toBottomOf="@id/comment_writer_text_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:text="댓글 내용"/>
+
+    <TextView
+        android:id="@+id/comment_write_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr_regular"
+        android:includeFontPadding="false"
+        android:textSize="14sp"
+        android:textColor="@color/mbti_gray_c"
+        app:layout_constraintTop_toBottomOf="@id/comment_content_text_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:text="@string/comment_time"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
